@@ -1378,6 +1378,10 @@ img {
         margin-right: 0px;
     }
 
+    .title.nfts-title {
+        width: 180px;
+    }
+
 }
 
 @media (max-width: 510px) {
