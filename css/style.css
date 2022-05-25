@@ -1,0 +1,1563 @@
+body {
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 32px;
+    background: #010101;
+    overflow-x:hidden;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+*,
+*::after,
+*::before {
+   box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1216px;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #3a3a3a;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #999999;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #cacaca;
+}
+
+/* Header */
+
+.header {
+    height: 97px;
+
+    color: #FFFFFF;
+}
+
+.header__inner {
+    height: 97px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.nav, .nav-adaptive {
+    display: flex;
+    align-items: center;
+    margin-left: -60px;
+}
+
+.nav-adaptive {
+    width: 100%;
+    display: block;
+    justify-content: center;
+
+    margin: 0 auto;
+}
+
+.nav__item, .nav__item-adaptive {
+    margin-left: 60px;
+    padding-bottom: 10px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav__item:hover {
+    color: #00E6CD;
+    transition: 1s;
+}
+
+.nav__social, .nav__social-adaptive{
+    width: 44px;
+    margin-left: 80px;
+}
+
+.nav__social.telegram, .nav__social-adaptive.telegram {
+    margin-left: 30px;
+}
+
+.header__inner-adaptive {
+    display: block;
+    position: fixed;
+    top: -100%;
+
+    width: 100%;
+    height: 100%;
+
+    background: #010101;
+    backdrop-filter: blur(25px);
+
+    transition: 1s;
+
+    z-index: 1000;
+}
+
+/* Intro */
+
+.dude {
+    display: block;
+}
+
+.dude-adaptive-1 {
+    display: none;
+    margin-left: auto;
+}
+
+.intro {
+    margin-top: 40px;
+    margin-bottom: 300px;
+}
+
+.intro__inner {
+    display: flex;
+}
+
+.intro__text {
+    padding-top: 180px;
+    margin-left: 0;
+}
+
+.intro__title {
+    width: 436px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 120.69%;
+    /* or 42px */
+
+    letter-spacing: -0.005em;
+
+    color: #FFFFFF;
+}
+
+.subtitle__bk {
+    margin-top: 25px;
+
+    background: rgba(31, 31, 31, 0.3);
+    backdrop-filter: blur(25px);
+    border-radius: 25px;
+}
+
+.intro__subtitle {
+    width: 310px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+
+    color: #FFFFFF;
+}
+
+.btn {
+    padding: 17px 94px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: -0.005em;
+    text-decoration: none;
+
+    color: #FFFFFF;
+
+    background: linear-gradient(92.99deg, #00CDF5 0%, #00FFA3 100%);
+    border-radius: 25px;
+    transition: 1s;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 95px #01F2B9;
+}
+
+/* About */ 
+
+.about {
+    margin-top: -180px;
+}
+
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__text {
+    height: auto;
+
+    background: rgba(31, 31, 31, 0.3);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border-radius: 25px;
+
+    z-index: 20;
+}
+
+.title {
+    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-left: 30px;
+
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 120.69%;
+    letter-spacing: -0.005em;
+
+    color: #FFFFFF;
+}
+
+.text {
+    width: 690px;
+    padding-left: 30px;
+    padding-right: 90px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+
+    color: #FFFFFF;
+}
+
+.about__social {
+    margin-top: 25px;
+    padding-left: 30px;
+    z-index: 20;
+}
+
+.about__social__item {
+    margin-right: 20px;
+}
+
+.about__social__img {
+    width: 46px;
+    height: 47px;
+}
+
+.slide {
+    height: 412px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.swiper-slide, .swiper-container {
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.blur__1 {
+    position: absolute;
+    width: 369px;
+    height: 364px;
+    margin-top: -240px;
+
+    opacity: 0.7;
+    background: linear-gradient(92.99deg, #7DED54 0%, #00B0D6 100%);
+    filter: blur(180px);
+    z-index: -20;
+}
+
+.swiper-container{
+    width: 495px;
+    height: 412px;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    border-radius: 25px;
+}
+
+/* Invest */
+
+.invest {
+    margin-top: 80px;
+}
+
+.invest__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.invest__text {
+    height: auto;
+
+    background: rgba(31, 31, 31, 0.3);
+    backdrop-filter: blur(25px);
+    border-radius: 25px;
+}
+
+.text.invest-text {
+    width: 600px;
+} 
+
+.title.invest-text {
+    width: 490px;
+    line-height: 160%;
+}
+
+.invest__img {
+    width: 585px;
+    height: 370px;
+    margin-bottom: -10px;
+    border-radius: 25px;
+}
+
+.blur__2 {
+    position: absolute;
+    width: 369px;
+    height: 364px;
+    margin-top: 164px;
+    margin-left: 920px;
+
+    opacity: 0.7;
+    background: linear-gradient(92.99deg, #FF9900 0%, #FF9900 100%);
+    filter: blur(180px);
+    z-index: -20;
+}
+
+.invest__image {
+    margin-right: 20px;
+}
+
+/* Companies */
+
+.companies {
+    margin-top: 80px;
+}
+
+.com-text {
+    width: 472px;
+    margin: 0 auto;
+
+    line-height: 180%;
+    text-align: center;
+}
+
+.com__item {
+    width: 20%;   
+}
+
+.com__inner {
+    display: flex;
+}
+
+.com__item__text {
+    margin-top: -50px;
+
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 180%;
+
+    color: #FFFFFF;
+}
+
+/* NFTS */
+
+.nfts {
+    margin-top: 120px;
+}
+
+.nfts__inner {
+    display: flex;
+}
+
+.nfts__text {
+    height: 310px;
+
+    background: rgba(31, 31, 31, 0.3);
+    backdrop-filter: blur(25px);
+    border-radius: 25px;
+}
+
+.nfts__image {
+    margin-right: 20px;
+}
+
+.title.nfts-title {
+    width: 553px;
+
+    line-height: 140.69%;
+}
+
+.text.nfts-text {
+    width: 553px;
+}
+
+.nfts__btn {
+    margin-top: 25px;
+    margin-left: 30px;
+}
+
+.nfts__btn__a {
+    display: flex;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    text-decoration: none;
+
+    color: #FFFFFF;
+}
+
+.eth {
+    margin-right: 15px;
+}
+
+.arrow {
+    margin-left: 8px;
+}
+
+/* Money */
+
+.money {
+    margin-top: 120px;
+}
+
+.money__inner {
+    display: flex;
+}
+
+.money__text {
+    display: block;
+}
+
+.title.money-title {
+    padding: 0;
+    width: 440px;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    line-height: 150%;
+    text-align: left;
+}
+
+.input {
+    display: block;
+    padding: 22px;
+    padding-left: 35px;
+    padding-right: 140px;
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    text-align: left;
+    color: #FAEE01;
+
+    background: rgba(116, 116, 116, 0.5);
+    border-radius: 15px;
+    outline: none;
+    border: none;
+}
+
+.money__btn {
+    display: block;
+    width: 393px;
+    padding: 15px 130px;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: -0.005em;
+    text-decoration: none;
+    outline: none;
+    border: none;
+
+    color: #FFFFFF;
+
+    background: linear-gradient(92.99deg, #F55800 0%, #FAFF00 100%);
+    border-radius: 15px;
+    box-shadow: 0px 0px 78px rgba(250, 225, 1, 0.66);
+}
+
+.result {
+    margin-top: 20px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+
+    color: #FFFFFF;
+}
+
+#result {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 180%;
+
+    color: #F9E001;
+}
+
+/* Best */
+
+.best {
+    margin-top: 80px;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+
+.title.best-title {
+    margin-bottom: 40px;
+    padding-left: 0;
+
+    text-align: center;
+}
+
+.best__inner {
+    display: flex;
+    justify-content: center;
+}
+
+.best__item {
+    width: 24%;
+    height: auto;
+    margin-left: 50px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    background: rgba(31, 31, 31, 0.3);
+    backdrop-filter: blur(25px);
+    border-radius: 25px;
+}
+
+.best__item__text {
+    padding-top: 8px;
+    padding-bottom: 15px;
+}
+
+.span__1 {
+    font-weight: 600;
+
+    color: #D81616;
+}
+
+.span__2 {
+    font-weight: 600;
+
+    color: #00F152;
+}
+
+.best__blur {
+    margin-top: -200px;
+    margin-left: 230px;
+    position: absolute;
+}
+
+/* Join */
+
+.join {
+    width: 100%;
+    max-width: auto;
+    margin: 0 auto;
+}
+
+.title.join-title {
+    margin-bottom: 40px;
+
+    text-align: center;
+}
+
+.join__inner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.join__item__a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.join__text {
+    margin-right: 30px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 180%;
+    text-decoration: none;
+    color: #77E74F;
+}
+
+.join__item.telegram {
+    margin-left: 70px;
+}
+
+.join__text.telegram {
+    color: #00D7FF;
+}
+
+/* Adaptive */
+
+.large__whatsapp, .large__telegram {
+    max-width: 64px;
+    max-height: 64px;
+}
+
+.invest__img-adaptive-1  {
+    display: none;
+}
+
+.logo__img-adaptive {
+    display: none;
+}
+
+.burger {
+    display: none;
+}
+
+.dude-adaptive-2 {
+    display: none;
+}
+
+.invest__img-adaptive-2 {
+    display: none;
+}
+
+.nfts__img-adaptive {
+    display: none;
+}
+
+.title.com-text {
+    padding-left: 0;
+}
+
+.best__item:first-child {
+    margin-left: 0;
+}
+
+.ффффф-adaptive.active {
+    width: 500px;
+    display: block;
+    justify-content: center;
+    margin: 0 auto;
+    top: 25%;
+}
+
+.close {
+    display: none;
+}
+
+.close.active {
+    display: block;
+    background: none;
+    border: none;
+    margin-left: 530px;
+
+    z-index: 1200;
+}
+
+/* Media */
+
+@media (max-width: 1400px) {
+
+    /* Container */
+
+    .container {
+        max-width: 960px;
+    }
+
+    /* Header */
+
+    .nav__item {
+        margin-left: 50px;
+    }
+
+    /* Intro */
+    
+    .dude {
+        display: none;
+    }
+
+    .intro {
+        margin-bottom: 60px;
+    }
+
+    .intro__text {
+        padding-top: 110px;
+    }
+
+    .dude-adaptive-1 {
+        width: 520px;
+        height: 520px;
+        display: block;
+        margin-left: -200px;
+        margin-top: -60px;
+
+        z-index: -20;
+        margin-left: auto;
+    }
+
+    .intro__subtitle {
+        width: 375px;
+    }
+
+    /* About */
+
+    .slide {
+        max-width: 440px;
+    }
+
+    .about__inner {
+        align-items: center;
+    }
+    
+    .about__text {
+        height: auto;
+        margin-right: 20px;
+    }
+
+    .text {
+        width: 500px;
+        padding-right: 65px;
+    }
+
+    .about {
+        margin-top: 30px;
+    }
+    
+    .about__social {
+        padding-bottom: 25px;
+    }
+    
+
+    /* Invest */
+
+    .invest {
+        margin-top: 60px;
+    }
+
+    .invest__inner {
+        align-items: center;
+    }
+
+    .blur__2 {
+        margin-top: 81px;
+        margin-left: 608px;
+    } 
+
+    .invest__img  {
+        display: none;
+    }
+
+    .invest__img-adaptive-1  {
+        display: block;
+    }
+
+    .text.invest-text {
+        padding-bottom: 30px;
+    }
+
+    .invest__img-adaptive-1 {
+        border-radius: 15px;
+    }
+
+    /* Companies */
+
+    .companies {
+        margin-top: 60px;
+    }
+
+    .com__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .com__item {
+        width: 26%;
+    }
+
+    /* NFTS */
+
+    .nfts {
+        margin-top: 80px;
+    }
+
+    .nfts__inner {
+        align-items: center;
+    }
+
+    .nfts__text {
+        height: auto;
+    }
+
+    .title.nfts-title {
+        width: 280px;
+    }
+
+    .text.nfts-text {
+        width: 400px;
+        margin-right: 20px;
+    }
+
+    .nfts__btn {
+        padding-bottom: 30px;
+    }
+
+    .text.nfts-text
+
+    /* Money */
+
+    .money {
+        margin-top: 80px;
+    }
+
+    /* Best */
+
+    .best {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .best__inner {
+        display: flex;
+    }
+
+    .best__item {
+        width: 28%;
+        height: 380px;
+        margin-left: 26px;
+    }
+
+    /* Join */
+
+    .join__inner {
+        margin-bottom: 70px;
+    }
+    
+    .burger.active {
+        display: none;
+    }
+    
+}
+
+@media (max-width: 1070px) {
+
+    /* Container */
+
+    .container {
+        max-width: 728px;
+    }
+
+    /* Header */
+
+    .logo__img {
+        display: none;
+    }
+
+    .logo__img-adaptive {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        background: none;
+        border: none;
+        outline: none;
+    }
+
+    /* Intro */
+
+    .intro__inner {
+        display: block;
+        margin-bottom: 90px;
+    }
+
+    .dude-adaptive-1 {
+        width: 500px;
+        height: 300px;
+        margin-left: -200px;
+    }
+    
+    .dude-adaptive-1 {
+        display: none;
+    }
+
+    .dude-adaptive-2 {
+        display: block;
+        margin-top: -20px;
+    }
+
+    .subtitle__bk {
+        text-align: center;
+    }
+
+    .intro__title {
+        width: auto;
+        margin-bottom: 15px;
+
+        text-align: center;
+    }
+
+    .intro__text {
+        margin-top: -55px;
+        text-align: center;
+    }
+
+    .intro__subtitle {
+        width: 375px;
+        margin: 0 auto;
+    }
+
+    .subtitle__bk {
+        width: 500px;
+        display: block;
+        padding-left: 0px;
+        margin: 0 auto;
+
+        text-align: center;
+        background: none;
+    }
+
+    .btn__div{
+        margin-top: 30px;
+    }
+
+    .invest {
+        margin-top: 90px;
+    }
+
+    /* About */
+
+    .about__inner {
+        display: block;
+        justify-content: center;
+    }
+
+    .text {
+        width: auto;
+    }
+
+    .about__text {
+        height: 415px;
+        margin-right: 0;
+    }
+
+    .slider {
+        margin-left: 130px;
+        margin-top: 20px;
+    }
+
+    /* Ivest */
+
+    .invest__inner {
+        display: block;
+    }
+
+    .blur__2 {
+        margin-left: 335px;
+    }
+
+    .invest__img-adaptive-1 {
+        display: none;
+    }
+
+    .invest__img-adaptive-2 {
+        display: block;
+        margin-top: 20px;
+    }
+
+    /* NFTS */
+
+    .nfts__inner {
+        display: block;
+    }
+
+    .nfts__img {
+        display: none;
+    }
+
+    .nfts__img-adaptive {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nfts__text {
+        margin-bottom: 30px;
+    }
+
+    .title.nfts-title, .text.nfts-text {
+        width: auto;
+    }
+
+    .title.nfts-title {
+        width: auto;
+    }
+
+    .text.nfts-text {
+        margin-right: -30px;
+    }
+
+    .nfts__text {
+        height: auto;
+    }
+
+    /* Money */
+
+    .money__inner {
+        display: block;
+    }    
+
+    .money__image {
+        display: none;
+    }
+
+    .money__inner {
+        margin: 0 auto;
+    }
+
+    .title.money-title {
+        text-align: center;
+        width: auto;
+
+        font-size: 35px;
+    }
+
+    .input {
+        margin: 0 auto;
+        width: 100%;
+
+        font-size: 16px;
+    }
+
+    .money__btn {
+        margin: 0 auto;
+        padding: 20px;
+        width: 100%;
+
+        font-size: 16px;
+    }
+
+    .money__btn__div {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .result {
+        text-align: center;
+    }
+
+    /* Best */
+
+    .best {
+        margin-bottom: 40px;
+    }
+
+    .best__inner {
+        margin-left: 0;
+    }
+
+    .best__item {
+        width: 30%;
+        height: 342px;
+        margin-left: 18px;
+    }
+
+    /* Burger */
+
+    .header__inner-adaptive.active {
+        display: block;
+        position: fixed;
+        top: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background: #010101;
+        backdrop-filter: blur(25px);
+
+        transition: 1s;
+
+        z-index: 1000;
+    }
+
+    .nav-adaptive {
+        position: fixed;
+        margin: 0 auto;
+    }
+    
+    .nav__item-adaptive {
+        display: block;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .nav__item-adaptive:first-child {
+        margin-top: 150px;
+    }
+
+    .nav-adaptive.active {
+        display: block;
+        width: 100%;
+    }
+
+    .nav__social-adaptive {
+        display: block;
+
+    }
+
+    .money {
+        margin-top: 80px;
+    }
+
+    .title.invest-text {
+        width: 780px;
+        line-height: 160%;
+    }
+
+    .text.invest-text {
+        width: 700px;
+    }
+
+    .input, .money__btn {
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 790px) {
+
+    /* Container */
+
+    .container {
+        max-width: 440px;
+    }
+
+    /* Intro */
+
+    .subtitle__bk {
+        width: 100%;
+    }
+
+    .intro__title, .title {
+        font-size: 25px;
+    }
+
+    .intro__subtitle {
+        width: 315px;
+
+        font-size: 15px;
+    }
+    
+    .text {
+        padding-right: 33px;
+    }
+
+    .title.nfts-title {
+        width: 200px;
+    }
+
+    /* About */
+
+    .text {
+        font-size: 15px;
+    }
+
+    .slider {
+        margin-left: 0;
+    }
+
+    .swiper-slide{
+        overflow: hidden;
+    }
+
+    .swiper-container {
+        width: 440px;
+    }
+
+    .slide {
+        width: 440px;
+    }
+
+    .blur__1 {
+        margin-left: 40px;
+        margin-bottom: -40px;
+    }
+
+    .input {
+        font-size: 15px;
+    }
+
+    .input, .money__btn {
+        width: 100%;
+    }
+
+    /* Invest */
+
+    .title.invest-text {
+        font-size: 25px;
+    }
+
+    .text.invest-text {
+        width: 100%;
+    }
+
+    .invest__text {
+        height: 300px;
+    }
+
+    .blur__2 {
+        margin-left: 35px;
+        margin-top: -140px;
+    }
+
+    /* Companies */
+
+    .com__item {
+        width: 33%;
+    }
+
+    .com__item__text {
+        width: auto;
+        margin-top: -40px;
+
+        font-size: 15px;
+    }
+
+    .title.com-text {
+        width: auto;
+        line-height: 160%;
+    }
+
+    /* NFTS */
+
+    .nfts {
+        margin-top: 80px;
+    }
+
+    .nfts__btn__a{
+        font-size: 17px;
+    }
+
+    /* Money */
+
+    .result {
+        margin-left: 0;
+    }
+
+    /* Best */
+
+    .title.best-title {
+        padding: 0;
+    }
+
+    .best__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .best__item {
+        width: 47%;
+        height: 330px;
+        margin-bottom: 20px;
+    }
+
+    .title.join-title {
+        padding: 0;
+    }
+
+    .best__item__text {
+        font-size: 15px;
+    }
+    
+    /* Join */
+
+    .join__inner {
+        display: block;
+        justify-content: center;
+        margin-left: 120px;
+        margin-bottom: 50px;
+    }
+
+    .join__item {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+
+    .join__item.telegram {
+        margin-left: 20px;
+    }
+
+    .join__text {
+        font-size: 20px;
+    }
+
+    .large__whatsapp, .large__telegram {
+        max-width: 44px;
+        max-height: 44px;
+    }
+
+    .intro__subtitle {
+        width: 315px;
+    }
+    
+    .btn {
+        padding: 13px 70px;
+
+        font-size: 15px;
+    }
+
+    .about__text {
+        height: auto;
+    }
+    
+    .title.invest-text {
+        width: 780px;
+    }
+ 
+
+    .title.money-title {
+        font-size: 25px;
+    }
+
+    .best {
+        margin-top: 80px;
+    }
+
+    .close.active {
+        margin-left: 340px;
+    }
+
+    .title.invest-text {
+        width: 410px;
+    }
+
+    .title.nfts-title {
+        width: 430px;
+    }
+
+    .text.nfts-text {
+        margin-right: 0px;
+    }
+
+}
+
+@media (max-width: 510px) {
+
+    /* Container */
+
+    .container {
+        max-width: 280px;
+    }
+
+    /* Intro */
+
+    .intro__title, .intro__title, .title.invest-text, .title {
+        font-size: 22px;
+    }
+
+    .dude-adaptive-2 {
+        margin-top: -10px;
+    }
+
+    .btn {
+        padding: 13px 82px;
+    }
+
+    .intro__subtitle {
+        width: auto;
+    }
+    
+    /* About */
+
+    .about {
+        margin-top: 0;
+    }
+
+    .slider {
+        display: none;
+    }
+
+    .blur__1, .blur__2 {
+        width: 280px;
+        height: 280px;
+        margin-left: 0;
+    }
+
+    .blur__2 {
+        margin-top: -340px;
+    }
+
+    .blur__1 {
+        margin-top: -390px;
+    }
+
+    /* Invest */
+
+    .invest {
+        margin-top: 40px;
+    }
+
+    .title.invest-text {
+        width: 280px;
+    }
+
+    .invest__text {
+        height: auto;
+    }
+
+    .invest__img-adaptive-2 {
+        display: none;
+    }
+
+    .input {
+        padding: 18px;
+    }
+
+    .money__btn {
+        padding: 14px 130px;
+    }
+
+    /* Companies */
+
+    .companies {
+        margin-top: 30px;
+    }
+
+    .com__item {
+        width: 50%;
+    }
+
+    .com__item:last-child {
+        display: none;
+    }
+
+    /* NFTS */
+
+    .nfts {
+        margin-top: 50px;
+    }
+
+    .nfts__text {
+        height: auto;
+    }
+
+    .nfts__img-adaptive{
+        display: none;
+    }
+
+    /* Money */
+
+    .money {
+        margin-top: 60px;
+    }
+
+    .input {
+        width: 280px;
+        padding-right: 30px;
+        padding-left: 25px;
+    }
+
+    .title.money-title {
+        display: block;
+        max-width: 185px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .money__btn {
+        width: 280px;
+    }
+
+    .money__btn {
+        padding-left: 98px;
+    }
+    
+    .result {
+        font-size: 15px;
+    }
+
+    #result {
+        font-size: 15px;
+    }
+
+    /* Best */
+
+    .best {
+        margin-top: 60px;
+    }
+    
+    .best__item {
+        width: 100%;
+        height: 399px;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+    /* Join */
+
+    .join__inner {
+        margin-left: 45px;
+    }
+
+    .intro__title {
+        line-height: 160%;
+    }
+
+    .close.active {
+        display: block;
+        position: fixed;
+        background: none;
+        border: none;
+    
+        margin-left: 235px;
+    
+        z-index: 1200;
+    }
+
+    .join__item.telegram {
+        margin-left: 10px;
+    }
+
+    .nav-adaptive.active {
+        top: 35%;
+    }
+}
