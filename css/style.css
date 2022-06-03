@@ -690,6 +690,10 @@ img {
     z-index: 1200;
 }
 
+.money__btn {
+    cursor: pointer;
+}
+
 /* Media */
 
 @media (max-width: 1400px) {
@@ -1161,6 +1165,14 @@ img {
         width: 60%;
     }
 
+    .nav-adaptive.active {
+        padding-top: 30vh;
+    }
+    
+    .title.invest-text {
+        width: 740px;
+    }
+
 }
 
 @media (max-width: 790px) {
@@ -1377,9 +1389,13 @@ img {
     .text.nfts-text {
         margin-right: 0px;
     }
+    
+    .title.nfts-title {
+        width: 220px;
+    }
 
     .title.nfts-title {
-        width: 180px;
+        width: 400px;
     }
 
 }
@@ -1561,7 +1577,8 @@ img {
         margin-left: 10px;
     }
 
-    .nav-adaptive.active {
-        top: 35%;
+    .title.nfts-title {
+        width: 185px;
     }
+
 }
